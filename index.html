@@ -3,12 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>test123abc</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #00ff00;
+            font-family: "Courier New", Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .terminal {
+            border: 2px solid #00ff00;
+            padding: 30px 40px;
+            box-shadow: 0 0 20px #00ff00;
+            text-align: left;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 22px;
+        }
+
+        .blink {
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 1px solid #00ff00;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #00ff00;
+            color: #000;
+        }
+    </style>
 </head>
 <body>
 
+<div class="terminal">
+    <h1>test123abc</h1>
+    <p>> system booting<span class="blink">_</span></p>
+    <p>> access granted</p>
+    <p>> target: eaglercraft wasm</p>
+
     <a href="1.12.2WASM.html">
-    <button>Start Eaglercraft</button>
+        <div class="button">[ LAUNCH ]</div>
     </a>
+</div>
 
 </body>
 </html>
